@@ -1,0 +1,309 @@
+/* Global CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+:root {
+    --primary-color: #2b6035;
+    --secondary-color: rgb(61, 107, 156);
+    --text-dark: rgb(45, 38, 38);
+    --text-light: azure;
+    --white: white;
+    --max-width: 1400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url("travel1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    
+}
+.logo{
+    border-radius:50%;
+}
+.nav{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    gap:1rem;
+}
+.link a{
+    font-weight: 600;
+    color: var(--white);
+}
+.search{
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+.search input{
+    width: 100%;
+    font-size:1rem;
+    color:var(--primary-color);
+    outline:none;
+    border:none;
+}
+.search input::placeholder{
+    color:var(--secondary-color);
+}
+.search span {
+    font-size: 1.5rem;
+    color:var(--primary-color)
+}
+.login{
+    padding: 0.5rem 0.7rem;
+    display:flex;
+    gap:1rem;
+    color:var(--white);
+    background-color: #2b6035;
+    border-radius: 2rem;
+    cursor:pointer;
+    align-items: center;
+}
+.login:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .login span {
+    padding: 5px 8px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-radius: 100%;
+  }
+  
+  .destination {
+    position: relative;
+    padding: 5rem 0 5rem 5rem;
+    gap: 2rem;
+  }
+  
+  
+  .socials {
+    position: absolute;
+    top: 25rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .socials::after {
+    position: absolute;
+    content: "";
+    top: -22rem;
+    left: 15px;
+    height: 15rem;
+    width: 2px;
+    background-color: var(--white);
+  }
+  
+  .socials span {
+    font-size: 2rem;
+    color: var(--white);
+  }
+  
+  .content h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .content h1 span {
+    -webkit-text-stroke: 2px var(--white);
+    -webkit-text-fill-color: transparent;
+  }
+  .content{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  .content p {
+    max-width: 90%;
+    margin-bottom: 2rem;
+    line-height: 1.2rem;
+    color: var(--white);
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .content .btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    margin-bottom:2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    max-width: 70%;
+  }
+  
+  .place_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .destination__card {
+    height: 100%;
+    background-color: var(--white);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .destination__card img {
+    width: 100%;
+  }
+  
+  .card__content {
+    padding: 1rem;
+  }
+  
+  .card__content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .card__content p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: grey;
+  }
+  
+  
+  .card__content .btn {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+  .arr{
+    position: relative; 
+    height: 5vh; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.arrow {
+    position: absolute; 
+    right: 45%; 
+    transform: translateX(100%);
+    opacity: 0.6;
+    z-index: -1;
+    margin-bottom: 2rem;
+}
+
+
+.site-footer {
+    background-color: #f4f4f4;
+    padding: 30px 0; 
+}
+
+.site-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.site-footer h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 4px;
+}
+
+.footer-links ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(24, 16, 42);
+}
+
+.footer-logo h4 {
+    color: gray;
+    font-weight: 600;
+}
+
+.bt {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer-newsletter form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter input[type="email"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.footer-newsletter button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer-newsletter button:hover {
+    background-color: #ddd;
+}
