@@ -227,15 +227,9 @@ nav{
     background-color: var(--primary-color);
     cursor: pointer;
   }
-  @media (max-width: 992px) {
-    .place_grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-    }
-}
-
 @media (max-width: 768px) {
     .place_grid {
-        grid-template-columns: 1fr; /* One column for mobile */
+        grid-template-columns: 1fr;
     }
 }
   .arr{
@@ -256,7 +250,7 @@ nav{
 }
 @media (max-width: 768px) {
     .arr {
-        justify-content: center; /* Center align on mobile */
+        justify-content: center;
     }
 
     .arrow {
@@ -264,7 +258,7 @@ nav{
         right: initial;
         left: 50%;
         transform: translateX(-50%);
-        max-width: 80%; /* Adjust image width for smaller screens */
+        max-width: 80%; 
     }
 }
 
